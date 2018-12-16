@@ -1,0 +1,48 @@
+<html>
+<head>
+<title></title>
+    <style>
+        table{
+            border: 1px red solid;
+            text-align: center;
+            background-color: blue;
+            color:white;
+        }
+        th,td{
+            border:1px red dotted;
+            padding:5px;
+        }
+        body{
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+<center><h1>The Product Details are..</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Cost</th>
+        <th>Product Color</th>
+        <th>Product Weight</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in data %}
+        <tr>
+            <td>{{ row.productid }}</td>
+            <td>{{ row.productname }}</td>
+            <td>{{ row.productcost }}</td>
+            <td>{{ row.productcolor }}</td>
+            <td>{{ row.productweight }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    </center>
+</body>
+</html>

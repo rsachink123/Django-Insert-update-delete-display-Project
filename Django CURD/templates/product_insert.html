@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Data Insertind</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    form{
+        border:2px red solid;
+        padding: 6px;
+        border-radius: 20px;
+        background-color: green;
+    }
+    h1{
+       color:red;
+        font-family: fantasy;
+        text-align: center;
+        font-size: 70px;
+    }
+    label{
+        margin-top: 20px;
+    }
+    body{
+        background-color: yellowgreen;
+    }
+</style>
+<body>
+<h1>Please enter your data</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form }}<br><br>
+{#                <center><input type="submit" value="Submit"></center>#}
+                <center><button><img src="https://t3.ftcdn.net/jpg/00/26/06/02/240_F_26060298_S8Mxr8UxWy7pBzOt4STyeXfmSBqjc7gv.jpg" wigth="35px" height="35px"></button></center>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
